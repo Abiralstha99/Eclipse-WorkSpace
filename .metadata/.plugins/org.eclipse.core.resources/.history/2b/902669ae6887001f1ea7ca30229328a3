@@ -1,0 +1,30 @@
+/*
+ * Abiral Shrestha
+ */
+import java.util.*;
+public class CountMax {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner (System.in);
+		int max =Integer.MIN_VALUE;
+		int count = 0;
+		boolean valueInput = false;
+		while (!valueInput ) {
+			System.out.println("Enter numbers");
+			int number = sc.nextInt();
+			if (number ==0) {
+				valueInput = false;
+			}
+			if (number > max) {
+				max = number;
+				count++;
+			} 
+			else if (number == max){
+				count++;
+			}
+		}
+		System.out.println("The largest number is " + max);
+		System.out.println("The occurrence count of the largest number is " + count);
+	}
+}
