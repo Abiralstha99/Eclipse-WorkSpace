@@ -4,7 +4,7 @@ public class BubbleSort {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int []arr = {5,4,8,3,2,1};
+		int []arr = {5,4,8  ,3,2,1};
 		bubble(arr);
 		System.out.println(Arrays.toString(arr));
 	}
